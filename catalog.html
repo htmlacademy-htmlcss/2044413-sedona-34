@@ -23,16 +23,13 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+              <span class="visually-hidden">Поиск</span>
             </a>  
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Лайки
-              </span>
+              <span class="visually-hidden">Лайки</span>
+              <span class="selected-number">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -109,10 +106,6 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья</legend>
-          </fieldset>
-
-          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость,₽:</legend>
             <div class="catalog-filter-range">
               <input class="catalog-filter-range-input" type="number" name="price-range-min" value="0" >
@@ -123,6 +116,7 @@
       </section>
 
       <section class="searching-results">
+        <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
         <p class="searching-results-text">Найдено гостиниц:38</p>
         <select class="searching-select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -228,7 +222,7 @@
         </div>
 
         <div class="container-pagination">
-          <p class="visually-hidden">Переход на страницу</p>
+          <h3 class="visually-hidden">Переход на страницу</h3>
           <ul class="pagination">
             <li class="pagination-item pagination-current">1</li>
             <li class="pagination-item">
