@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
 
@@ -145,8 +146,8 @@
           </a>
           <span>Гостиница</span>
           <span class="price">От 4000 ₽</span>
-          <a class="hotel-card-button1 button" href="#">подробнее</a>
-          <a class="hotel-card-button2 button" href="#">в избранное</a>
+          <a class="hotel-card-button hotel-card-button-left" href="#">подробнее</a>
+          <a class="hotel-card-button hotel-card-button-right" href="#">в избранное</a>
           <div class="rating">
             <ul class="rating-star-list">
               <li class="rating-star-item"></li>
@@ -154,7 +155,7 @@
               <li class="rating-star-item"></li>
               <li class="rating-star-item"></li>
             </ul>
-            <span>Рейтинг: 8,5</span>
+            <span class="rating-number">Рейтинг: 8,5</span>
           </div>
         </div>
 
@@ -167,8 +168,8 @@
           </a>
           <span>Гостиница</span>
           <span class="price">От 5000 ₽</span>
-          <a class="hotel-card-button1 button" href="#">подробнее</a>
-          <a class="hotel-card-button2 button" href="#">в избранном</a>
+          <a class="hotel-card-button hotel-card-button-left" href="#">подробнее</a>
+          <a class="hotel-card-button  hotel-card-button-right button-selected" href="#">в избранном</a>
           <div class="rating">
             <ul class="rating-star-list">
               <li class="rating-star-item"></li>
@@ -176,7 +177,7 @@
               <li class="rating-star-item"></li>
               <li class="rating-star-item"></li>
             </ul>
-            <span>Рейтинг: 9,2</span>
+            <span class="rating-number">Рейтинг: 9,2</span>
           </div>
         </div>
 
@@ -189,15 +190,15 @@
           </a>
           <span>Гостиница</span>
           <span class="price">От 2500 ₽</span>
-          <a class="hotel-card-button1 button" href="#">подробнее</a>
-          <a class="hotel-card-button2 button" href="#">в избранное</a>
+          <a class="hotel-card-button hotel-card-button-left" href="#">подробнее</a>
+          <a class="hotel-card-button hotel-card-button-right" href="#">в избранное</a>
           <div class="rating">
             <ul class="rating-star-list">
               <li class="rating-star-item"></li>
               <li class="rating-star-item"></li>
               <li class="rating-star-item"></li>
             </ul>
-            <span>Рейтинг: 6,9</span>
+            <span class="rating-number">Рейтинг: 6,9</span>
           </div>
         </div>
 
@@ -210,14 +211,14 @@
           </a>
           <span>Гостиница</span>
           <span class="price">От 1500 ₽</span>
-          <a class="hotel-card-button1 button" href="#">подробнее</a>
-          <a class="hotel-card-button2 button" href="#">в избранное</a>
+          <a class="hotel-card-button hotel-card-button-left" href="#">подробнее</a>
+          <a class="hotel-card-button hotel-card-button-right" href="#">в избранное</a>
           <div class="rating">
             <ul class="rating-star-list">
               <li class="rating-star-item"></li>
               <li class="rating-star-item"></li>
             </ul>
-            <span>Рейтинг: 5,0</span>
+            <span class="rating-number">Рейтинг: 5,0</span>
           </div>
         </div>
 
@@ -258,7 +259,7 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscription-email">Email</label>
           <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
-          <button class="subscription-button" type="submit">Подписаться</button>
+          <button class="subscription-button subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

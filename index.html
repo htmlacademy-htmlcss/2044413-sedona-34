@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
 
@@ -32,7 +33,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>  
+            <a class="navigation-link-invitation" href="#">Хочу сюда</a>  
           </li> 
         </ul>
       </nav>
@@ -42,15 +43,15 @@
       <section class="logo-sedona">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="logo" src="./images/logo.svg" width="458" height="352" alt="Логотип Добро пожаловать в Седону!">     
-        <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="logo-sedona-description">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+        <p class="logo-sedona-cause">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества города Седона</h2> 
         <ul class="advantages-list">
-          <li class="advantages-item">
-            <div class="advantage">
+          <li class="advantages-item advantages-item-blue">
+            <div class="advantage ">
               <p class="advantage-title">Настоящий городок</p>
               <p class="advantage-number">— №1 —</p> 
               <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -58,7 +59,7 @@
             <img class="advantage-image" src="./images/advantages/real-city-photo.jpg" width="800" height="384" alt="Улица Седоны"> 
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item"> 
             <div class="advantage-special">
               <p class="advantage-title">Жильё</p>
               <p class="advantage-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -79,9 +80,9 @@
             </div>
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-blue">
             <img class="advantage-image" src="./images/advantages/devils-bridge-photo.jpg" width="800" height="384" alt="Удивительная природа SEDONA"> 
-            <div class="advantage">
+            <div class="advantage-bridge">
               <p class="advantage-title">Там есть мост дьявола</p>
               <p class="advantage-number">— №2 —</p> 
               <p class="advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -128,7 +129,7 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscription-email">Email</label>
           <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
-          <button class="subscription-button" type="submit">Подписаться</button>
+          <button class="subscription-button subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
