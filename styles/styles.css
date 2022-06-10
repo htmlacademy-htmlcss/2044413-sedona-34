@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "PT Sance";
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,19 +7,51 @@
 }
 
 @font-face {
-    font-family: "PT Sance";
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
+/* .visually-hidden {
+    display: none;
+} */
+
+.navigation-link {
+    color: inherit;
+    text-align: center;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
 body {
-    font-family: "PT Sance";
+    font-family: "PT Sans";
     font-size: 18px;
     line-height: 21px;
     background: #F2F2F2;
     color: #333333;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list { 
+    margin: 0;
+    padding: 0;
+    width: 490px;
+}
+
+.navigation-list.navigation-user {
+    margin: 0;
+    padding: 0;
+    width: 490px;
+    margin-left: auto;
+    max-width: 365px;
 }
 
 .page-header {
@@ -28,26 +60,75 @@ body {
     line-height: 26px;
     color: #000000;
     background: #FFFFFF;
+    margin:0 auto;
+    width: 1200px;
 }
 
 .navigation-link-invitation {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    padding: 9px 15px 8px 15px;
+    text-align: center;
+    background-color: #756157;
+    color: #FFFFFF;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-.main-index {
+.logo-sedona {
+    /* width: 1200px; */
+    /* height: 282px; */
+    background-image: url("../images/logo-background.jpg");
     background-color: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
+.logo-sedona-cause {
+    width: 655px;
+    margin: 0 auto;
+    text-align: center;  
+} 
+
+.page-container {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    margin: 51px auto 82px;   
+}
+
 .logo-sedona-description {
+    width: 620px; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 63px 290px 147px 290px;
     font-weight: 400;
     font-size: 22px;    
     line-height: 26px;
     text-transform: uppercase;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.advantages-item {
+    display: flex;
+    width: 400px;
+}
+
+.advantage {
+    min-width: 400px;
 }
 
 .advantage-title {
@@ -68,62 +149,89 @@ body {
 }
 
 .advantages-item.advantages-item-blue {
+    width: 100%;
     background-color: #82B3D3;
 }
 
+.hotel-search {
+    width: 1200px;
+    height: 417px;
+    background-color: #FFFFFF;
+}
+
 .hotel-search h2 {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
+    width: 300px;
+    height: 36px;
     font-size: 30px;
     line-height: 36px;
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
 
 .hotel-search p {
-    font-style: normal;
-    font-weight: 400;
+    margin: 0 auto;
+    width: 600px;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: #333333;
 }
 
-.hotel-search-button {
-    font-family: "PT Sans";
-    font-style: normal;
+.hotel-search-button.button-brown {
+    display: block;
+    margin: 0 auto;
+    width: 574px;
+    height: 60px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-brown {
+    background-color: #756157;
+    color: #FFFFFF;
+}
+
+.subscription {
+    background-image: url("../images/subscribe-background.jpg");
+    width: 1200px;
+    height: 411px;
+}
+
+.subscription-content {
+    width: 800px;
+    margin: 0 auto;
 }
 
 .subscription h2 {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
+    width: 100%;
     font-size: 30px;
     line-height: 36px;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .subscription p {
-    font-style: normal;
-    font-weight: 400;
+    width: 100%;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
 }
 
+.subscription-form {
+    width: 100%;
+    display: flex;
+}
+
 .subscription-button {
-    font-family: "PT Sans";
-    font-style: normal;
+    width: 200px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -131,6 +239,10 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.subscription-field {
+    flex-grow: 1;
 }
 
 .footer-contacts {
@@ -140,9 +252,25 @@ body {
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     color: #000000;
 }
 
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.social-footer {
+    width: 145px;
+    margin-right: 237px;
+}
+
+.link-footer {
+    margin-left: auto;
+    max-width: 120px;
+}
 /* стилизация каталога */
 
 .main-hotel {
@@ -150,17 +278,12 @@ body {
 }
 
 .hotel-filters h1 {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
 }
 
 .catalog-filter-title {
-    font-family: "PT Sans";
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -168,8 +291,17 @@ body {
     color: #FFFFFF;
 }
 
+.hotel-card {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.searching-results {
+    background: #FFFFFF;
+}
+
 .searching-results-text {
-    font-family: "PT Sans";
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -178,8 +310,6 @@ body {
 }
 
 .hotel-card-title {
-    font-family: "PT Sans";
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -209,6 +339,7 @@ body {
 }
 
 .rating {
+    display: flex;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -221,7 +352,13 @@ body {
     background-color: #F2F2F2;
 }
 
+.subscriptions {
+    background-color: #FFFFFF;  
+}
+
 .subscriptions h2 {
+    width: 405px;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -230,6 +367,8 @@ body {
 }
 
 .subscriptions p {
+    width: 480px;
+    margin: 0 auto;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
