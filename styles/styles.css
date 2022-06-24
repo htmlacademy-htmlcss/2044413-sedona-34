@@ -19,18 +19,10 @@
     width: 1px;
     height: 1px;
     margin: -1px;
-    padding: 0; 
+    padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
-    overflow: hidden; */
-}  
-
-.navigation-link {
-    color: inherit;
-    text-align: center;
-    font-weight: 700;
-    background-color: #FFFFFF;
-    text-decoration: none;
+    overflow: hidden;
 }
 
 body {
@@ -40,19 +32,30 @@ body {
     background: #F2F2F2;
     color: #333333;
     margin: 0;
-    }
+}
+
+/* Header */
+
+.navigation-link {
+    color: inherit;
+    text-align: center;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
 
 .navigation {
     display: flex;
+    justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+    padding-right: 70px;
 }
 
-.navigation-list { 
+.navigation-list {
     display: flex;
     margin: 0;
     padding: 0;
-    width: 490px;
     list-style-type: none;
 }
 
@@ -62,7 +65,7 @@ body {
 }
 
 .navigation-link {
-    display: block; 
+    display: block;
     margin: 0;
     padding: 20px 17px 19px;
 }
@@ -83,17 +86,17 @@ body {
     display: none;
 }
 
-.navigation-list.navigation-user {
+/* .navigation-list.navigation-user {
     width: 264px;
     height: 66px;
     margin-left: auto; 
-    margin-right: 70px;   
-}
+    margin-right: 70px; 
+}  */
 
 .navigation-user .navigation-link {
     box-sizing: border-box;
     min-width: 45px;
-    min-height: 65px;    
+    min-height: 65px;
 }
 
 .page-header {
@@ -103,7 +106,7 @@ body {
     line-height: 26px;
     color: #000000;
     background: #FFFFFF;
-    margin:0 auto;
+    margin: 0 auto;
     width: 1200px;
     min-height: 65px;
 }
@@ -125,6 +128,8 @@ body {
 
 }
 
+/* Main */
+
 .main-index {
     margin-top: -5px;
 }
@@ -133,6 +138,8 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+
+/* Section Logo-sedona */
 
 .logo-sedona {
     padding-bottom: 90px;
@@ -143,7 +150,8 @@ body {
     box-sizing: border-box;
     width: 1200px;
     height: 485px;
-    padding-top: 51px;  
+    padding-top: 51px;
+    margin-bottom: 63px;
     background-image: url("../images/logo-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -152,25 +160,28 @@ body {
 
 .logo {
     display: block;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 .logo-sedona-description {
     width: 620px;
     height: 72px;
-    margin: 63px auto 31px;
+    margin: 0 auto;
+    margin-bottom: 31px;
     text-align: center;
     font-weight: 400;
-    font-size: 22px;    
+    font-size: 22px;
     line-height: 26px;
     text-transform: uppercase;
 }
 
 .logo-sedona-cause {
     width: 655px;
-    margin: 31px auto 0;
-    text-align: center;  
-} 
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Section Advantages */
 
 .advantages-list {
     display: flex;
@@ -184,19 +195,21 @@ body {
 .advantages-item {
     display: flex;
     width: 400px;
+    min-height: 384px;
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantage {
     min-width: 400px;
     box-sizing: border-box;
-    padding: 92px 85px 0;
+    padding: 92px 85px 20px;
 }
 
 .advantage-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    padding: 0;
+    padding: 0 29px;
     margin: 0 auto 30px;
     color: #000000;
     text-align: center;
@@ -234,7 +247,7 @@ body {
 }
 
 .advantage-special-housing {
-   background-image: url("../images/advantages/home-icon.svg"); 
+    background-image: url("../images/advantages/home-icon.svg");
 }
 
 .advantage-special-eat {
@@ -245,12 +258,6 @@ body {
     background-image: url("../images/advantages/souvenir-icon.svg");
 }
 
-.advantages-item {
-    width: 400px;
-    height: 384px;
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
 .advantages-item.advantages-item-blue {
     width: 100%;
     background-color: #82B3D3;
@@ -259,8 +266,8 @@ body {
 
 .hotel-search {
     width: 1200px;
-    height: 420px;
     padding-top: 91px;
+    padding-bottom: 90px;
     background-color: #FFFFFF;
     box-sizing: border-box;
 }
@@ -287,14 +294,13 @@ body {
 .hotel-search-button.button-brown {
     display: block;
     box-sizing: border-box;
-    margin: 0 auto 93px;
+    margin: 0 auto;
     padding: 12px 15px;
     width: 574px;
-    height: 60px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    align-items: center; 
+    align-items: center;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -312,19 +318,20 @@ body {
 
 .subscription {
     width: 1200px;
-    height: 411px;
+    box-sizing: border-box;
     background-color: #FFFFFF;
+    padding: 94px 200px;
 }
 
 .subscription-main {
-    background-image: url("../images/subscribe-background.jpg"); 
-    background-color: #756157; 
+    background-image: url("../images/subscribe-background.jpg");
+    background-repeat: no-repeat;
+    background-color: #756157;
 }
 
 .subscription-content {
     width: 800px;
     margin: 0 auto;
-    padding-top: 95px; 
 }
 
 .subscription h2 {
@@ -358,7 +365,7 @@ body {
 .subscription-form {
     width: 100%;
     padding: 0;
-    margin: 0 auto 95px;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -380,7 +387,7 @@ body {
 .subscription-catalog .subscription-field {
     flex-grow: 1;
     background-color: #F2F2F2;
-} 
+}
 
 .footer-contacts {
     font-style: normal;
@@ -414,24 +421,24 @@ body {
     height: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}   
+}
 
 .footer-social-item {
     margin: 0;
     padding: 0;
     width: 40px;
     height: 40px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .footer-social-item-contact {
     background-image: url("../images/social-icons/vk.svg");
-    
+
 }
 
 .footer-social-item-telegram {
@@ -457,16 +464,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     background-image: url("../images/filter-background.jpg");
     background-color: #756157;
     background-repeat: no-repeat;
+    padding: 35px 70px 70px;
 }
 
 .hotel-filters h1 {
     margin: 0;
     padding: 0;
-    margin: 35px 635px 10px 70px;
+    margin-bottom: 10px;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
@@ -493,50 +500,89 @@ body {
 
 .breadcrumbs-link-main {
     background-image: url("../images/icons/main.svg");
-    margin-right: 10px;
 }
 
 .breadcrumbs-item-hotel {
-   margin-top: 10px;
-   margin-left: 10px;
-   margin-bottom: 40px;
-}
-
-.hotel-card {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    height: 438px;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 40px;
 }
 
 .searching-container {
     display: flex;
+    padding: 50px 72px 56px;
 }
 
 .searching-results {
     background-color: #FFFFFF;
-} 
+}
 
 .searching-select-control {
     width: 290px;
     height: 49px;
     display: flex;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     padding: 14px 97px 14px 20px;
-    margin: 50px 78px 56px 0;
+    margin-right: 78px; 
 }
-    
+
 .searching-results-text {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
-    margin: 0;
+    margin: auto;
+    margin-left: 0;
     padding: 0;
-    margin: 58px 191px 61px 72px;
+}
+
+.searching-layout-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.searching-layout-item {
+    box-sizing: border-box;
+    min-width: 48px;
+    min-height: 48px;
+    border: 1px solid #000000;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.searching-layout-item-list {
+    background-image: url("../images/view-icons/list.svg");
+}
+
+.searching-layout-item-card {
+    background-image: url("../images/view-icons/slideshow.svg");
+}
+
+.searching-layout-item-signature {
+    background-image: url("../images/view-icons/tile.svg");
+}
+
+.
+
+.searching-layout-item:last-child {
+    margin-right: 0;
+}
+
+.hotel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 72px;
+    gap: 18px;
+}
+
+.hotel-card {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333333;
 }
 
 .hotel-card-title {
@@ -544,6 +590,89 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin: 0;
+    margin-bottom: 16px;  
+}
+
+.hotel-card-image {
+    margin-bottom: 16px;
+}
+
+.hotel-card-description {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.hotel-card-actions {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.hotel-card-name {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 20px;
+}
+
+.hotel-card-price {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.hotel-card-button-left {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0;
+    margin-right: 20px;
+    padding: 9px 15px; 
+    background-color: #756157;
+}
+
+
+.hotel-card-button-right {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0;
+    padding: 9px 15px;
+    background-color: #82B3D3; 
+}
+
+.rating {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    /* background-color: #F2F2F2; */
+}
+
+.rating-star-list {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.rating-star-item {
+    box-sizing: border-box;
+    min-width: 18px;
+    min-height: 18px;
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/icons/star.svg");
+}
+
+.rating-number {
+    display: block;
+    padding: 9px 0;
+    text-align: center;
+    background-color: #F2F2F2;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .hotel-card-button {
@@ -556,34 +685,12 @@ body {
     color: #FFFFFF;
 }
 
-.hotel-card-button-left {
-    background-color: #756157;
-}
-
-.hotel-card-button-right {
-    background-color: #82B3D3;
-}
-
 .hotel-card-button-right.button-selected {
     background-color: #7DB54F;
 }
 
-.rating {
-    display: flex;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #333333;
-    background-color: #F2F2F2;
-}
-
-.rating-number {
-    background-color: #F2F2F2;
-}
-
 .subscriptions {
-    background-color: #FFFFFF;  
+    background-color: #FFFFFF;
 }
 
 .subscriptions h2 {
@@ -628,7 +735,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    padding: 30px;  
+    padding: 30px;
 }
 
 .pagination-item:not(:last-child) {
@@ -647,4 +754,3 @@ body {
     background-color: #82B3D3;
     text-decoration: none;
 }
-
