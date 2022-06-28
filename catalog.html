@@ -60,7 +60,7 @@
 
         <form class="hotel-filters-form" action="#" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <legend class="catalog-filter-title catalog-filter-title-infrastructure">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -86,7 +86,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <legend class="catalog-filter-title catalog-filter-title-housing">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="catalog-filter-control">
@@ -118,6 +118,11 @@
               <input class="catalog-filter-range-input" type="number" name="price-range-max" value="9000">
             </div>
           </fieldset>
+
+          <div class="catalog-filter-buttons">
+            <button class="catalog-filter-buttons catalog-filter-button-apply" type="submit"><span>применить</span></button>
+            <button class="catalog-filter-buttons catalog-filter-button-reset" type="reset">сбросить</button>
+          </div>
         </form>
       </section>
 
@@ -252,8 +257,8 @@
           </div>
         </div>
 
-        <div class="searching-results-footer">
-          <div class="pagination-wrapper">
+        <div class="searching-results-footer-container">
+          <div class="searching-results-footer">
             <h3 class="visually-hidden">Переход на страницу</h3>
             <ul class="pagination">
               <li class="pagination-item pagination-current">1</li>
@@ -266,20 +271,20 @@
               <li class="pagination-item">
                 <a class="pagination-button" href="#">4</a>
               </li>
-              <li class="pagination-item">&#8230;</li>
+              <li class="pagination-item">&#8230</li>
               <li class="pagination-item">
                 <a class="pagination-button" href="#">10</a>
               </li>
             </ul>
-          </div>
 
-          <div class="container-card-num">
-            <p>Гостиниц на странице:</p>
-            <select class="control-select">
-              <option value="4">4</option>
-              <option value="8">8</option>
-              <option value="16">16</option>
-            </select>
+            <div class="container-card-num">
+              <p>Гостиниц на странице:</p>
+              <select class="control-select">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+              </select>
+            </div>
           </div>
         </div>
       </section>
