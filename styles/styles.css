@@ -38,6 +38,8 @@ body {
 
 .header-logo {
     margin-left: 70px;
+    margin-bottom: -5px;
+    z-index: 1;
 }
 
 .navigation-link {
@@ -167,11 +169,17 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-/* Main */
-
-.main-index {
-    margin-top: -5px;
+.navigation-link-current::before {
+    content: "";
+    position: absolute;
+    right: 17px;
+    bottom: 0;
+    left: 17px;
+    height: 0;
+    border: 2px solid #756257;
 }
+
+/* Main */
 
 .page-container {
     width: 1200px;
@@ -605,7 +613,6 @@ body {
 /* стилизация каталога */
 
 .main-hotel {
-    margin-top: -5px;
     color: #FFFFFF;
 }
 
@@ -1097,14 +1104,6 @@ body {
 .catalog-filter-button-reset:active {
     opacity: 0.3;
 }
-
-
-
-
-
-
-
-
 
 .catalog-filter-list {
     margin: 0;
