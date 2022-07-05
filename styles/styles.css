@@ -34,7 +34,7 @@ body {
     margin: 0;
 }
 
-/* Header */
+/* HEADER */
 
 .header-logo {
     margin-left: 70px;
@@ -92,10 +92,7 @@ body {
     margin: auto;
 }
 
-.navigation-link:hover svg path {
-    fill: #756157;
-}
-
+.navigation-link:hover svg path,
 .navigation-link:focus svg path {
     fill: #756157;
 }
@@ -156,10 +153,7 @@ body {
     border-radius: 4px;
 }
 
-.navigation-link-invitation:hover {
-    background-color: #615048;
-}
-
+.navigation-link-invitation:hover,
 .navigation-link-invitation:focus {
     background-color: #615048;
 }
@@ -184,14 +178,14 @@ body {
     z-index: 1;
 }
 
-/* Main */
+/* MAIN */
 
 .page-container {
     width: 1200px;
     margin: 0 auto;
 }
 
-/* Section Logo-sedona */
+/* SECTION "LOGO SEDONA" */
 
 .logo-sedona {
     padding-bottom: 90px;
@@ -601,10 +595,7 @@ body {
     margin: auto;
 }
 
-.footer-link:hover svg path {
-    fill: #756157;
-}
-
+.footer-link:hover svg path,
 .footer-link:focus svg path {
     fill: #756157;
 }
@@ -1282,7 +1273,7 @@ body {
     margin: 0;
 }
 
-/* кнопки Применить и Сбросить в Каталоге */
+/*КНОПКИ "ПРИМЕНИТЬ" И "СБРОСИТЬ" В КАТАЛОГЕ*/
 
 .catalog-filter-buttons {
     min-width: 160px;
