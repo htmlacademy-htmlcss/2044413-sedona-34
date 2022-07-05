@@ -221,6 +221,55 @@
       </section>
     </div>
   </footer>
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+        <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.114 1.292 12.822 0 7.114 5.708 1.407 0 .114 1.292 5.822 7 .114 12.708 1.407 14l5.707-5.708L12.822 14l1.292-1.292L8.407 7l5.707-5.708Z"
+            fill="#000" />
+        </svg>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">поиск гостиницы в седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group search-date">
+            <label class="form-label form-label-date" for="search-date">Дата Заезда:</label>
+            <input class="field field-date" type="text" id="search-date" name="search-date"
+              placeholder="27 апреля 2020">
+            <span class="search-info search-info-warning">Мы не можем отправить вас в прошлое.</span>
+          </p>
+
+          <p class="field-group search-date">
+            <label class="form-label form-label-date" for="search-date">Дата Выезда:</label>
+            <input class="field field-date" type="text" id="search-date" name="search-date"
+              placeholder="1 сентября 2021">
+            <span class="search-info">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <div class="field-group-people">
+            <p class="field-group field-group-adult">
+              <label class="form-label" for="amount">Взрослые:</label>
+              <input class="field" type="text" id="amount" name="amount" placeholder="2">
+            </p>
+
+            <p class="field-group field-group-child">
+              <label class="form-label" for="amount">Дети:</label>
+              <span class="info">
+                <svg aria-hidden="true" focusable="false" width="3" height="12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M.114 0h2v2h-2V0Zm2 12h-2V3h2v9Z" fill="#FFFFFF" />
+                </svg>
+              </span>
+              <input class="field" type="text" id="amount" name="amount" placeholder="1">
+            </p>
+          </div>
+          <button class="search-button" type="submit">найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
