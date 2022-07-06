@@ -264,7 +264,13 @@ body {
 .advantage {
     min-width: 400px;
     box-sizing: border-box;
-    padding: 92px 85px 20px;
+    padding: 102px 85px 20px;
+}
+
+.advantages-item-blue .advantage {
+    min-width: 400px;
+    box-sizing: border-box;
+    padding-top: 92px;
 }
 
 .advantage-title {
@@ -334,7 +340,7 @@ body {
 .hotel-search {
     width: 1200px;
     padding-top: 91px;
-    padding-bottom: 90px;
+    padding-bottom: 93px;
     background-color: #FFFFFF;
     box-sizing: border-box;
 }
@@ -344,7 +350,7 @@ body {
     height: 36px;
     font-size: 30px;
     line-height: 36px;
-    margin: 0 auto 30px;
+    margin: 0 auto 29px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -411,7 +417,7 @@ body {
     width: 1200px;
     box-sizing: border-box;
     background-color: #FFFFFF;
-    padding: 94px 200px;
+    padding: 95px 200px 94px;
 }
 
 .subscription-main {
@@ -427,7 +433,7 @@ body {
 
 .subscription h2 {
     width: 100%;
-    margin: 0 auto 30px;
+    margin: 0 auto 28px;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -441,7 +447,7 @@ body {
 
 .subscription p {
     width: 100%;
-    margin: 0 auto 45px;
+    margin: 0 auto 46px;
     padding: 0;
     font-size: 22px;
     line-height: 26px;
@@ -461,16 +467,18 @@ body {
 }
 
 .subscription-button {
+    align-items: center;
+    padding: 12px 15px;
     width: 200px;
-    font-weight: 700;
+    font: inherit;
     font-size: 20px;
     line-height: 36px;
-    align-items: center;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 12px 15px;
     border-radius: 0px 10px 10px 0px;
+    border: none;
 }
 
 .subscribe {
@@ -489,9 +497,10 @@ body {
 
 .subscription-field {
     flex-grow: 1;
-    border-radius: 10px 0px 0px 10px;
-    border: none;
     padding: 19px 22px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    font: inherit;
 }
 
 .subscription-catalog .subscription-field {
@@ -524,19 +533,19 @@ body {
 }
 
 .page-footer-container {
-    background-color: #FFFFFF;
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 30px 70px 40px 70px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 45px 70px 35px 70px;
+    width: 1200px;
+    background-color: #FFFFFF;
 }
 
 .social-footer {
     margin: 0;
     padding: 0;
     width: 145px;
-    margin-right: 237px;
 }
 
 .footer-social-list {
@@ -588,7 +597,6 @@ body {
 .link-footer {
     position: relative;
     width: 115px;
-    margin-left: auto;
     max-width: 120px;
 }
 
@@ -941,40 +949,6 @@ body {
 .hotel-card-button-right.button-selected:active {
     background-color: #7DB54F;
     color: rgba(255, 255, 255, 0.3);
-}
-
-.subscriptions {
-    background-color: #FFFFFF;
-}
-
-.subscriptions h2 {
-    width: 405px;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.subscriptions p {
-    width: 480px;
-    margin: 0 auto;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #333333;
-}
-
-.subscription-button {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    border: none;
 }
 
 .searching-results-footer-container {
