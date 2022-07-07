@@ -52,7 +52,7 @@ body {
     font-weight: 700;
     line-height: 26px;
     color: #000000;
-    background: #FFFFFF; 
+    background: #FFFFFF;
 }
 
 .header-logo {
@@ -415,7 +415,7 @@ body {
 }
 
 .subscription {
-    width: 100%;;
+    width: 100%;
     box-sizing: border-box;
     background-color: #FFFFFF;
     padding: 95px 200px 94px;
@@ -815,7 +815,7 @@ body {
     margin-bottom: 17px;
 }
 
-.hotel-card-image {
+.hotel-card-image-link {
     margin-bottom: 15px;
 }
 
@@ -1339,7 +1339,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
-    z-index: 999;
+    z-index: 990;
 }
 
 .modal-container-close {
@@ -1356,6 +1356,7 @@ body {
 .modal-search {
     width: 715px;
     box-sizing: border-box;
+    border-radius: 30px;
 }
 
 .modal-close-button {
@@ -1416,7 +1417,7 @@ body {
 
 .field:hover,
 .field:focus {
-    background-color: #E6E6E6;  
+    background-color: #E6E6E6;
 }
 
 .field:focus {
@@ -1433,6 +1434,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
     margin-bottom: 40px;
 }
 
@@ -1482,16 +1484,21 @@ body {
     width: 230px;
 }
 
+.buttons-child.buttons-minus-plus-container {
+    margin-left: auto;
+}
+
 .search-button {
     width: 100%;
     padding: 12px 26px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 36px; 
+    line-height: 36px;
     background-color: #83B3D3;
     color: #FFFFFF;
     border: none;
-    border-radius: 10px; 
+    border-radius: 10px;
+    letter-spacing: -1px;
     text-transform: uppercase;
 }
 
@@ -1511,11 +1518,12 @@ body {
 
 .info {
     position: relative;
+    margin-left: 5px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: #83B3D3;
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 .info svg {
@@ -1525,4 +1533,72 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
+}
+
+.buttons-minus-plus-container {
+    display: flex;
+    justify-content: space-between;
+    width: 133px;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 4px;
+}
+
+.buttons-minus-plus-container .field {
+    width: 31px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.modal-button {
+    display: flex;
+    min-width: 25px;
+    min-height: 25px;
+    margin: 13px 13px 12px;
+    padding: 0;
+    border: none;
+}
+
+.modal-button svg {
+    margin: auto;
+}
+
+/* ПОПОВЕР В МОДАЛЬНОМ ОКНЕ */
+.popover {
+    position: absolute;
+    width: 256px;
+    top: 42px;
+    right: -115px;
+    background-color: #333333;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: none;
+    z-index: 995;
+}
+
+.popover::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 119px;
+    border: 9px solid transparent;
+    border-bottom: 9px solid #333333;
+}
+
+.info:hover .popover {
+    display: block;
+}
+
+.popover-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 18px 22px 22px;
+}
+
+.popover-content-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
