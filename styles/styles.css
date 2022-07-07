@@ -684,7 +684,7 @@ body {
 
 .searching-container {
     display: flex;
-    padding: 55px 72px 52px;
+    padding: 55px 72px 56px;
 }
 
 .searching-results {
@@ -692,24 +692,22 @@ body {
 }
 
 .searching-select-container {
-    position: relative;
-    display: flex;
+    /* position: relative; */
+    /* display: flex;
     align-items: center;
-    width: 290px;
-    margin-right: 78px;
+    width: 290px; */
+    margin-right: 77px;
 }
 
 .searching-select-control {
-    width: 100%;
-    padding: 14px 20px;
-    padding-right: 97px;
+    width: 290px;
+    padding: 12px 18px;
     font: inherit;
-    font-weight: 400;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     background-image: url("../images/icons/checked.svg");
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 17px center;
     appearance: none;
 }
 
@@ -735,7 +733,7 @@ body {
     color: #000000;
     margin: auto;
     margin-left: 0;
-    padding: 0;
+    padding-top: 2px;
 }
 
 .searching-layout-list {
@@ -755,6 +753,7 @@ body {
 .searching-layout-button {
     position: relative;
     display: block;
+    box-sizing: border-box;
     min-width: 48px;
     min-height: 48px;
     border: 2px solid #E5E5E5;
@@ -1092,7 +1091,7 @@ body {
 
 .catalog-filter-group-housing {
     min-width: 145px;
-    margin-right: 175px;
+    margin-right: 176px;
 }
 
 .catalog-filter-title-infrastructure {
@@ -1172,6 +1171,8 @@ body {
 
 .range-bar {
     position: absolute;
+    left: 0;
+    width: 238px;
     height: 4px;
     background-color: #FFFFFF;
 }
@@ -1222,7 +1223,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 111px;
-    padding: 12px 14px 11px 16px;
+    padding: 12px 14px 9px 16px;
     border-right: 2px solid #FFFFFF;
 }
 
@@ -1261,6 +1262,7 @@ body {
 
 .catalog-filter-button {
     width: 160px;
+    box-sizing: border-box;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -1279,7 +1281,7 @@ body {
 .catalog-filter-button-apply {
     margin-top: 60px;
     margin-left: 70px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .catalog-filter-button-apply:hover {
@@ -1303,6 +1305,9 @@ body {
     background: none;
     text-transform: none;
     margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    padding: 10px 15px;
 }
 
 .catalog-filter-button-reset:hover {
@@ -1310,6 +1315,8 @@ body {
 }
 
 .catalog-filter-button-reset:focus {
+    margin-top: 2px;
+    margin-bottom: 3px;
     border: 3px solid #83B3D3;
 }
 
