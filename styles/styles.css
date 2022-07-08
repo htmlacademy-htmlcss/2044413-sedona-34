@@ -1405,13 +1405,15 @@ body {
 }
 
 .field {
+    min-height: 50px;
     box-sizing: border-box;
     font: inherit;
     color: #000000;
     background-color: #F2F2F2;
     border: none;
     border-radius: 4px;
-    padding: 14px 19px 15px;
+    padding: 5px 19px;
+    margin: 0;
     opacity: 0.6;
 }
 
@@ -1464,7 +1466,34 @@ body {
 }
 
 .field-date {
+    position: relative;
     width: 420px;
+}
+
+.search-date::after {
+    content: "";
+    position: absolute;
+    right: 19px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.field-date:hover,
+.field-date:focus {
+    background-color: #E6E6E6;
+}
+.field-date:focus {
+    border: 3px solid #83B3D3;
+}
+
+.field-date:active {
+    background: #FFFFFF;
+    border: 2px solid #000000;
 }
 
 .field-group-people {
@@ -1489,8 +1518,10 @@ body {
 }
 
 .search-button {
+    box-sizing: border-box;
     width: 100%;
-    padding: 12px 26px;
+    min-height: 60px;
+    padding: 5px 26px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -1558,6 +1589,22 @@ body {
     margin: 13px 13px 12px;
     padding: 0;
     border: none;
+    opacity: 0.3;
+}
+
+.modal-button:hover {
+    opacity: 1;
+}
+
+.modal-button:focus {
+    opacity: 1;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.modal-button:active {
+    opacity: 0.2;
+    border: none;
 }
 
 .modal-button svg {
@@ -1587,7 +1634,7 @@ body {
 }
 
 .info:hover .popover {
-    display: block;
+    display: block; 
 }
 
 .popover-content {
