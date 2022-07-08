@@ -588,7 +588,7 @@ body {
     fill: #68A2CA;
 }
 
-.footer-social-item:focus svg path {
+.footer-social-item a:focus svg path {
     fill: #68A2CA;
 }
 
@@ -633,7 +633,7 @@ body {
     background-image: url("../images/filter-background.jpg");
     background-color: #5b7e9e;
     background-repeat: no-repeat;
-    padding: 35px 70px 55px;
+    padding: 35px 71px 55px;
 }
 
 .hotel-filters h1 {
@@ -666,9 +666,27 @@ body {
     list-style-type: none;
 }
 
+.breadcrumbs-item {
+    position: relative;
+    font-size: 16px;
+}
+
+.breadcrumbs-item:first-child::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 0.3; */
+}
+
 .breadcrumbs-link-main {
     display: block;
-    min-width: 12px;
+    min-width: 13px;
     min-height: 21px;
     margin-right: 25px;
     background-image: url("../images/icons/main.svg");
@@ -1091,7 +1109,7 @@ body {
 
 .catalog-filter-group-housing {
     min-width: 145px;
-    margin-right: 176px;
+    margin-right: 175px;
 }
 
 .catalog-filter-title-infrastructure {
@@ -1117,6 +1135,7 @@ body {
 }
 
 .control-mark {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -1151,7 +1170,7 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-control:focus .control-mark {
+.catalog-filter-control input:focus+.control-mark {
     background-color: rgba(255, 255, 255, 0.6);
     border: 3px solid #83B3D3;
 }
@@ -1223,7 +1242,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 111px;
-    padding: 12px 14px 9px 16px;
+    padding: 12px 15px 9px;
     border-right: 2px solid #FFFFFF;
 }
 
@@ -1244,6 +1263,7 @@ body {
     color: #FFFFFF;
     border: none;
     appearance: textfield;
+    outline: none;
 }
 
 .catalog-filter-range-input::-webkit-outer-spin-button,
@@ -1487,6 +1507,7 @@ body {
 .field-date:focus {
     background-color: #E6E6E6;
 }
+
 .field-date:focus {
     border: 3px solid #83B3D3;
 }
@@ -1634,7 +1655,7 @@ body {
 }
 
 .info:hover .popover {
-    display: block; 
+    display: block;
 }
 
 .popover-content {
