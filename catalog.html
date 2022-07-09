@@ -70,7 +70,7 @@
           <li class="breadcrumbs-item breadcrumbs-item-hotel">Гостиницы</li>
         </ul>
 
-        <form class="hotel-filters-form" action="#" method="get">
+        <form class="hotel-filters-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group catalog-filter-group-infrastructure">
             <legend class="catalog-filter-title catalog-filter-title-infrastructure">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -167,15 +167,16 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group catalog-filter-group-range">
-            <legend class="catalog-filter-title">Стоимость,₽:</legend>
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="range-wrapper-inputs">
               <div class="range">
                 <div class="catalog-filter-range">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-range-input" type="number" name="price-range-min" value="0">от
+                  <label class="catalog-filter-label catalog-filter-label-from">
+                    <input class="catalog-filter-range-input" type="number" name="price-range-min" value="0">
+
                   </label>
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-range-input" type="number" name="price-range-max" value="9000">до
+                  <label class="catalog-filter-label catalog-filter-label-to">
+                    <input class="catalog-filter-range-input" type="number" name="price-range-max" value="9000">
                   </label>
                 </div>
               </div>
@@ -183,8 +184,12 @@
 
             <div class="range-scale">
               <div class="range-bar">
-                <button type="button" class="range-toggle toggle-min"></button>
-                <button type="button" class="range-toggle toggle-max"></button>
+                <button type="button" class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button type="button" class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
               </div>
             </div>
           </fieldset>
@@ -210,31 +215,20 @@
 
           <ul class="searching-layout-list">
             <li class="searching-layout-item">
-              <a class="searching-layout-button searching-layout-button-active" href="#">
+              <a class="searching-layout-button searching-layout-button-signature searching-layout-button-active"
+                href="#">
                 <span class="visually-hidden">Показать список</span>
-                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
-                    fill="#000" />
-                </svg>
               </a>
             </li>
             <li class="searching-layout-item">
-              <a class="searching-layout-button" href="#"><span class="visually-hidden">Показать карточки</span>
-                <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
-                </svg>
+              <a class="searching-layout-button searching-layout-button-card" href="#"><span
+                  class="visually-hidden">Показать карточки</span>
               </a>
             </li>
             <li class="searching-layout-item">
-              <a class="searching-layout-button" href="#"><span class="visually-hidden">Показать карточку с
+              <a class="searching-layout-button searching-layout-button-list" href="#"><span
+                  class="visually-hidden">Показать карточку с
                   подписью</span>
-                <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
-                    fill="#000" />
-                </svg>
               </a>
             </li>
           </ul>

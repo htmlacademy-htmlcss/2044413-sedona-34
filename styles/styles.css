@@ -519,6 +519,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+    outline: none;
 }
 
 .footer-contacts:hover {
@@ -681,7 +682,6 @@ body {
     background-image: url(../images/icons/arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
-    /* opacity: 0.3; */
 }
 
 .breadcrumbs-link-main {
@@ -698,6 +698,14 @@ body {
     fill: #FFFFFF;
 }
 
+.breadcrumbs-link-main:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs-link-main:active {
+    opacity: 0.3;
+}
+
 /* результаты поиска гостиниц в Каталоге */
 
 .searching-container {
@@ -710,10 +718,6 @@ body {
 }
 
 .searching-select-container {
-    /* position: relative; */
-    /* display: flex;
-    align-items: center;
-    width: 290px; */
     margin-right: 77px;
 }
 
@@ -727,6 +731,7 @@ body {
     background-repeat: no-repeat;
     background-position: right 17px center;
     appearance: none;
+    outline: none;
 }
 
 .searching-select-control:hover,
@@ -776,7 +781,50 @@ body {
     min-height: 48px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+    outline: none;
 }
+
+.searching-layout-item {
+    position: relative;
+}
+
+.searching-layout-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.searching-layout-button-list::after {
+    background-image: url("../images/view-icons/list.svg");
+}
+
+.searching-layout-button-card::after {
+    background-image: url("../images/view-icons/slideshow.svg");
+}
+
+.searching-layout-button-signature::after {
+    background-image: url("../images/view-icons/tile.svg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .searching-layout-button svg {
     position: absolute;
@@ -1103,13 +1151,15 @@ body {
 }
 
 .catalog-filter-group-infrastructure {
-    min-width: 150px;
-    margin-right: 70px;
+    max-width: 200px;
+    min-width: 200px;
+    margin-right: 20px;
 }
 
 .catalog-filter-group-housing {
-    min-width: 145px;
-    margin-right: 175px;
+    max-width: 200px;
+    min-width: 200px;
+    margin-right: 120px;
 }
 
 .catalog-filter-title-infrastructure {
@@ -1196,6 +1246,10 @@ body {
     background-color: #FFFFFF;
 }
 
+.range-bar button {
+    outline: none;
+}
+
 .range-toggle {
     position: absolute;
     width: 20px;
@@ -1238,32 +1292,64 @@ body {
     justify-content: space-between;
 }
 
-.catalog-filter-label {
-    display: flex;
-    justify-content: space-between;
-    width: 111px;
-    padding: 12px 15px 9px;
-    border-right: 2px solid #FFFFFF;
-}
-
-.catalog-filter-label:last-child {
-    border-right: none;
-}
-
 .catalog-filter-range {
     display: flex;
-    border: 2px solid #FFFFFF;
-    border-radius: 4px;
+}
+
+.catalog-filter-label {
+    position: relative;
+}
+
+.catalog-filter-label-from::after {
+    content: "от";
+    position: absolute;
+    right: 13px;
+    bottom: 15px;
+    opacity: 0.3;
+}
+
+.catalog-filter-label-to::after {
+    content: "до";
+    position: absolute;
+    right: 16px;
+    bottom: 15px;
+    opacity: 0.3;
 }
 
 .catalog-filter-range-input {
-    width: 70px;
+    box-sizing: border-box;
+    height: 48px;
+    width: 144px;
+    padding: 4px 50px 2px 17px;
     font: inherit;
     background-color: transparent;
     color: #FFFFFF;
-    border: none;
     appearance: textfield;
-    outline: none;
+    /* outline: none; */
+    border: 2px solid #FFFFFF;
+    border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label:first-child .catalog-filter-range-input {
+    border-right: 1px solid #FFFFFF;
+}
+
+.catalog-filter-label:last-child .catalog-filter-range-input {
+    border-left: 1px solid #FFFFFF;
+    border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-range-input:active {
+    background: #756257;
+}
+
+.catalog-filter-range-input:hover {
+    opacity: 0.6;
+}
+
+.catalog-filter-range-input:focus {
+    outline: 3px solid #81b3d2;
+	box-shadow: inset 0 0 0 3px #81b3d2;
 }
 
 .catalog-filter-range-input::-webkit-outer-spin-button,
@@ -1296,6 +1382,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    outline: none;
 }
 
 .catalog-filter-button-apply {
@@ -1389,6 +1476,7 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    outline: none;
 }
 
 .modal-close-button svg {
@@ -1435,6 +1523,7 @@ body {
     padding: 5px 19px;
     margin: 0;
     opacity: 0.6;
+    outline: none;
 }
 
 .field:hover,
@@ -1552,6 +1641,7 @@ body {
     border-radius: 10px;
     letter-spacing: -1px;
     text-transform: uppercase;
+    outline: none;
 }
 
 .search-button:hover,
@@ -1611,6 +1701,7 @@ body {
     padding: 0;
     border: none;
     opacity: 0.3;
+    outline: none;
 }
 
 .modal-button:hover {
@@ -1633,6 +1724,7 @@ body {
 }
 
 /* ПОПОВЕР В МОДАЛЬНОМ ОКНЕ */
+
 .popover {
     position: absolute;
     width: 256px;
