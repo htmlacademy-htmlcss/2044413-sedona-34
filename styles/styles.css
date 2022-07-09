@@ -270,6 +270,7 @@ body {
 
 .advantages-item-blue .advantage {
     min-width: 400px;
+    max-width: 400px;
     box-sizing: border-box;
     padding-top: 92px;
 }
@@ -278,8 +279,8 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    padding: 0 29px;
-    margin: 0 auto 30px;
+    padding: 2px 29px 0;
+    margin: 0 auto 29px;
     color: #000000;
     text-align: center;
     text-transform: uppercase;
@@ -814,18 +815,6 @@ body {
     background-image: url("../images/view-icons/tile.svg");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .searching-layout-button svg {
     position: absolute;
     top: 0;
@@ -878,11 +867,11 @@ body {
     line-height: 28px;
     color: #000000;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 }
 
 .hotel-card-image-link {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .hotel-card-description {
@@ -1325,7 +1314,6 @@ body {
     background-color: transparent;
     color: #FFFFFF;
     appearance: textfield;
-    /* outline: none; */
     border: 2px solid #FFFFFF;
     border-radius: 4px 0 0 4px;
 }
