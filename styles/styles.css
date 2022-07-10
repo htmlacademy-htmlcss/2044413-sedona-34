@@ -40,7 +40,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* HEADER */
+/* header */
 
 .page-header {
   display: flex;
@@ -186,9 +186,9 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* MAIN */
+/* main */
 
-/* SECTION "LOGO SEDONA" */
+/* section "logo sedona" */
 
 .logo-sedona {
   padding-bottom: 90px;
@@ -223,7 +223,7 @@ body {
 }
 
 .logo-sedona-description {
-  width: 620px;
+  width: 640px;
   margin: 0 auto;
   margin-bottom: 31px;
   text-align: center;
@@ -234,7 +234,7 @@ body {
 }
 
 .logo-sedona-cause {
-  width: 655px;
+  width: 670px;
   margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
@@ -242,12 +242,11 @@ body {
   color: #333333;
 }
 
-/* Section Advantages */
+/* section "advantages" */
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -263,7 +262,7 @@ body {
 .advantage {
   min-width: 400px;
   box-sizing: border-box;
-  padding: 102px 85px 20px;
+  padding: 102px 80px 20px;
 }
 
 .advantages-item-blue .advantage {
@@ -306,11 +305,11 @@ body {
   background-image: url("../images/advantages/souvenir-icon.svg");
 }
 
-.advantages-item-eat {
+.advantages-list .advantages-item.advantages-item-eat {
   background-color: #ffffff;
 }
 
-.advantages-item-road {
+.advantages-item:nth-child(2n + 1) {
   background: rgba(131, 179, 211, 0.2);
 }
 
@@ -412,7 +411,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   background-color: #ffffff;
-  padding: 95px 200px 94px;
+  padding: 94px 200px 95px;
 }
 
 .subscription-main {
@@ -429,7 +428,7 @@ body {
 
 .subscription h2 {
   width: 100%;
-  margin: 0 auto 28px;
+  margin: 0 auto 29px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -444,8 +443,8 @@ body {
 .subscription p {
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto 46px;
-  padding: 0 140px;
+  margin: 0 auto 45px;
+  padding: 0 140px 0 144px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -555,19 +554,17 @@ body {
 }
 
 .footer-social-list {
-  width: 142px;
-  height: 40px;
+  width: 200px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 4px;
 }
 
 .footer-social-item {
   position: relative;
-  margin: 0;
+  margin-right: 7px;
   padding: 0;
   width: 40px;
   height: 40px;
@@ -620,7 +617,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  margin: 4px auto;
 }
 
 .footer-link:hover path,
@@ -632,7 +629,7 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/* СТИЛИЗАЦИЯ КАТАЛОГА */
+/* catalog page */
 
 .main-hotel {
   color: #ffffff;
@@ -724,7 +721,7 @@ body {
   opacity: 0.3;
 }
 
-/* результаты поиска гостиниц в Каталоге */
+/* searching results */
 
 .searching-container {
   display: flex;
@@ -741,7 +738,7 @@ body {
 
 .searching-select-control {
   width: 290px;
-  padding: 12px 42px 12px 18px;
+  padding: 12px 42px 12px 17px;
   font: inherit;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -854,7 +851,9 @@ body {
 .hotel-cards {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0 71px 66px 73px;
+  list-style-type: none;
 }
 
 .hotel-card {
@@ -909,12 +908,24 @@ body {
   flex-basis: 0;
 }
 
+.hotel-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .hotel-card-button-left {
   flex-grow: 1;
   flex-basis: 0;
   margin: 0;
   margin-right: 20px;
   padding: 9px 15px;
+  max-width: 140px;
+  box-sizing: border-box;
   background-color: #756157;
   border-radius: 4px;
   text-decoration: none;
@@ -941,6 +952,8 @@ body {
   background-color: #82b3d3;
   border-radius: 4px;
   text-decoration: none;
+  font-family: inherit;
+  border: none;
 }
 
 .hotel-card-button-right:hover {
@@ -994,16 +1007,6 @@ body {
   border-radius: 4px;
 }
 
-.hotel-card-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 .hotel-card-button-right.button-selected {
   background-color: #7db54f;
 }
@@ -1029,7 +1032,7 @@ body {
 .searching-results-footer {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -1112,12 +1115,13 @@ body {
   align-items: center;
   width: 160px;
   margin-left: 54px;
+  margin-top: 7px;
 }
 
 .page-count-select-control {
   width: 160px;
   font: inherit;
-  padding: 12px 45px 12px 16px;
+  padding: 12px 45px 12px 15px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-image: url("../images/icons/checked.svg");
@@ -1144,7 +1148,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Инфраструктура и Тип жилья в Каталоге */
+/* filters: infrastructure and housing */
 
 .catalog-filter-group {
   margin: 0;
@@ -1233,7 +1237,7 @@ body {
   border: 3px solid #83b3d3;
 }
 
-/* слайдер с ценами в Каталоге */
+/* slider */
 
 .catalog-filter-group-range {
   max-width: 288px;
@@ -1366,7 +1370,7 @@ body {
   margin: 0;
 }
 
-/*КНОПКИ "ПРИМЕНИТЬ" И "СБРОСИТЬ" В КАТАЛОГЕ*/
+/* submit and reset catalog's buttons */
 
 .catalog-filter-buttons {
   min-width: 160px;
@@ -1444,7 +1448,7 @@ body {
   padding: 0;
 }
 
-/* МОДАЛЬНОЕ ОКНО */
+/* modal */
 
 .modal-container {
   position: fixed;
@@ -1739,7 +1743,7 @@ body {
   margin: auto;
 }
 
-/* ПОПОВЕР В МОДАЛЬНОМ ОКНЕ */
+/* popover */
 
 .popover {
   position: absolute;
