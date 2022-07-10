@@ -111,12 +111,12 @@ body {
   right: 10px;
 }
 
-.navigation-link:hover svg path,
-.navigation-link:focus svg path {
+.navigation-link:hover path,
+.navigation-link:focus path {
   fill: #756157;
 }
 
-.navigation-link:active svg path {
+.navigation-link:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -584,15 +584,15 @@ body {
   margin: auto;
 }
 
-.footer-social-item:hover svg path {
+.footer-social-item:hover path {
   fill: #68a2ca;
 }
 
-.footer-social-item a:focus svg path {
+.footer-social-item a:focus path {
   fill: #68a2ca;
 }
 
-.footer-social-item:active svg path {
+.footer-social-item:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -615,12 +615,12 @@ body {
   margin: auto;
 }
 
-.footer-link:hover svg path,
-.footer-link:focus svg path {
+.footer-link:hover path,
+.footer-link:focus path {
   fill: #756157;
 }
 
-.footer-link:active svg path {
+.footer-link:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
