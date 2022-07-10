@@ -363,6 +363,10 @@ body {
   text-align: center;
 }
 
+.hotel-search-info span:last-child {
+  padding-right: 15px;
+}
+
 .hotel-search-button {
   display: block;
   box-sizing: border-box;
@@ -488,8 +492,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.subscription-field {
+.subscription-field-label {
   flex-grow: 1;
+}
+
+.subscription-field {
+  width: 100%;
   padding: 19px 22px;
   border: none;
   border-radius: 10px 0 0 10px;
@@ -497,7 +505,6 @@ body {
 }
 
 .subscription-catalog .subscription-field {
-  flex-grow: 1;
   background-color: #f2f2f2;
 }
 
