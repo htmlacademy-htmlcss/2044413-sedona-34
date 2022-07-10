@@ -6,13 +6,14 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
 </head>
 
 <body>
   <div class="page-container">
     <header class="page-header">
       <a class="header-logo-link" href="index.html">
-        <img class="header-logo" src="./images/header-logo.svg" width="139" height="70" alt="Логотип Sity of Sedona">
+        <img class="header-logo" src="./images/header-logo.svg" width="139" height="70" alt="Логотип Sity of Sedon.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -23,13 +24,13 @@
             <a class="navigation-link" href="#">O Седоне</a>
           </li>
           <li class="navigation-item">
-            <span class="navigation-link navigation-link-current">Гостиницы</span>
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-search" href="#">
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden">Поиск.</span>
               <svg aria-hidden="true" focusable="false" width="19" height="19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -40,7 +41,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-likes" href="#">
-              <span class="visually-hidden">Лайки</span>
+              <span class="visually-hidden">Лайки.</span>
               <svg aria-hidden="true" focusable="false" width="19" height="17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -63,14 +64,14 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
-              <span class="visually-hidden">Главная</span>
+              <span class="visually-hidden">Главная.</span>
             </a>
           </li>
 
           <li class="breadcrumbs-item breadcrumbs-item-hotel">Гостиницы</li>
         </ul>
 
-        <form class="hotel-filters-form" action="#" method="get">
+        <form class="hotel-filters-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group catalog-filter-group-infrastructure">
             <legend class="catalog-filter-title catalog-filter-title-infrastructure">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -167,15 +168,15 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group catalog-filter-group-range">
-            <legend class="catalog-filter-title">Стоимость,₽:</legend>
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="range-wrapper-inputs">
               <div class="range">
                 <div class="catalog-filter-range">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-range-input" type="number" name="price-range-min" value="0">от
+                  <label class="catalog-filter-label catalog-filter-label-from">
+                    <input class="catalog-filter-range-input" type="number" name="price-range-min" value="0">
                   </label>
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-range-input" type="number" name="price-range-max" value="9000">до
+                  <label class="catalog-filter-label catalog-filter-label-to">
+                    <input class="catalog-filter-range-input" type="number" name="price-range-max" value="9000">
                   </label>
                 </div>
               </div>
@@ -183,8 +184,12 @@
 
             <div class="range-scale">
               <div class="range-bar">
-                <button type="button" class="range-toggle toggle-min"></button>
-                <button type="button" class="range-toggle toggle-max"></button>
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
               </div>
             </div>
           </fieldset>
@@ -197,8 +202,8 @@
       </section>
 
       <section class="searching-results">
+        <h2 class="visually-hidden">Результаты поиска гостиниц.</h2>
         <div class="searching-container">
-          <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
           <p class="searching-results-text">Найдено гостиниц: 38</p>
           <div class="searching-select-container">
             <select class="searching-select-control" aria-label="Сортировка">
@@ -210,31 +215,19 @@
 
           <ul class="searching-layout-list">
             <li class="searching-layout-item">
-              <a class="searching-layout-button searching-layout-button-active" href="#">
-                <span class="visually-hidden">Показать список</span>
-                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
-                    fill="#000" />
-                </svg>
+              <a class="searching-layout-button searching-layout-button-signature searching-layout-button-active"
+                href="#">
+                <span class="visually-hidden">Показать список.</span>
               </a>
             </li>
             <li class="searching-layout-item">
-              <a class="searching-layout-button" href="#"><span class="visually-hidden">Показать карточки</span>
-                <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
-                </svg>
+              <a class="searching-layout-button searching-layout-button-card" href="#">
+                <span class="visually-hidden">Показать карточки.</span>
               </a>
             </li>
             <li class="searching-layout-item">
-              <a class="searching-layout-button" href="#"><span class="visually-hidden">Показать карточку с
-                  подписью</span>
-                <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
-                    fill="#000" />
-                </svg>
+              <a class="searching-layout-button searching-layout-button-list" href="#">
+                <span class="visually-hidden">Показать карточку с подписью.</span>
               </a>
             </li>
           </ul>
@@ -244,7 +237,7 @@
           <div class="hotel-card">
             <a class="hotel-card-link hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="./images/hotel-photos/hotel-amara.jpg" width="300" height="211"
-                alt="Фотография отеля">
+                alt="Фотография отеля.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -271,7 +264,7 @@
           <div class="hotel-card">
             <a class="hotel-card-link hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="./images/hotel-photos/hotel-villas.jpg" width="300" height="211"
-                alt="Фотография отеля">
+                alt="Фотография отеля.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -298,7 +291,7 @@
           <div class="hotel-card">
             <a class="hotel-card-link hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="./images/hotel-photos/hotel-desert.jpg" width="300" height="211"
-                alt="Фотография отеля">
+                alt="Фотография отеля.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -324,7 +317,7 @@
           <div class="hotel-card">
             <a class="hotel-card-link hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="./images/hotel-photos/hotel-green-tree.jpg" width="300" height="211"
-                alt="Фотография отеля">
+                alt="Фотография отеля.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -349,10 +342,10 @@
 
         <div class="searching-results-footer-container">
           <div class="searching-results-footer">
-            <h3 class="visually-hidden">Переход на страницу</h3>
+            <h3 class="visually-hidden">Переходы между страницами.</h3>
             <ul class="pagination">
               <li class="pagination-item pagination-current">
-                <span class="pagination-button">1</span>
+                <a class="pagination-button">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-button" href="#">2</a>
@@ -389,7 +382,9 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
+          <label class="subscription-field-label">
+            <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
+          </label>
           <button class="subscription-button subscribe" type="submit">Подписаться</button>
         </form>
       </section>
@@ -397,11 +392,11 @@
 
     <footer class="page-footer">
       <section class="social-footer">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети.</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item footer-social-item-contact">
             <a class="button" href="#">
-              <span class="visually-hidden">В Контакте</span>
+              <span class="visually-hidden">В Контакте.</span>
               <svg aria-hidden="true" focusable="false" width="25" height="14" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -413,7 +408,7 @@
 
           <li class="footer-social-item footer-social-item-telegram">
             <a class="button" href="#">
-              <span class="visually-hidden">Телеграмм</span>
+              <span class="visually-hidden">Телеграмм.</span>
               <svg aria-hidden="true" focusable="false" width="18" height="16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -425,7 +420,7 @@
 
           <li class="footer-social-item footer-social-item-youtube">
             <a class="button" href="#">
-              <span class="visually-hidden">Ютуб</span>
+              <span class="visually-hidden">Ютуб.</span>
               <svg aria-hidden="true" focusable="false" width="23" height="18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -438,12 +433,12 @@
       </section>
 
       <section class="contacts-footer">
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Контакты.</h2>
         <a class="footer-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
 
       <section class="link-footer">
-        <h2 class="visually-hidden">Ссылка</h2>
+        <h2 class="visually-hidden">Ссылка на сайт.</h2>
         <a class="footer-link" href="https://htmlacademy.ru/study">
           <svg aria-hidden="true" focusable="false" width="115" height="33" fill="none"
             xmlns="http://www.w3.org/2000/svg">
