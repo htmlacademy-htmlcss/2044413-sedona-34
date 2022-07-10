@@ -497,8 +497,9 @@ body {
 }
 
 .subscription-field {
+  box-sizing: border-box;
   width: 100%;
-  padding: 19px 22px;
+  padding: 20px 22px 19px;
   border: none;
   border-radius: 10px 0 0 10px;
   font: inherit;
@@ -595,7 +596,7 @@ body {
   fill: #68a2ca;
 }
 
-.footer-social-item a:focus path {
+.footer-social-button:focus path {
   fill: #68a2ca;
 }
 
