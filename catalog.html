@@ -77,7 +77,7 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="catalog-filter-control">
-                  <input class="catalog-filter-control-checkbox visually-hidden" type="checkbox" name="Бассейн" checked>
+                  <input class="catalog-filter-control-checkbox visually-hidden" type="checkbox" name="pool" checked>
                   <span class="control-mark">
                     <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать бассейн." width="13"
                       height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
 
               <li class="catalog-filter-item">
                 <label class="catalog-filter-control">
-                  <input class="catalog-filter-control-checkbox visually-hidden" type="checkbox" name="Парковка"
+                  <input class="catalog-filter-control-checkbox visually-hidden" type="checkbox" name="parking"
                     checked>
                   <span class="control-mark">
                     <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать парковку." width="13"
@@ -104,7 +104,7 @@
 
               <li class="catalog-filter-item">
                 <label class="catalog-filter-control">
-                  <input class="catalog-filter-control-checkbox visually-hidden" type="checkbox" name="Wi-Fi">
+                  <input class="catalog-filter-control-checkbox visually-hidden" type="checkbox" name="wi-fi">
                   <span class="control-mark">
                     <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать Wi-Fi." width="13"
                       height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +122,7 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="catalog-filter-control">
-                  <input class="catalog-filter-control-radio visually-hidden" type="radio" name="product-group" checked>
+                  <input class="catalog-filter-control-radio visually-hidden" type="radio" name="product-group" value="hotel" checked>
                   <span class="control-mark control-mark-radio">
                     <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать гостиницу." width="10"
                       height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,7 @@
 
               <li class="catalog-filter-item">
                 <label class="catalog-filter-control">
-                  <input class="catalog-filter-control-radio visually-hidden" type="radio" name="product-group">
+                  <input class="catalog-filter-control-radio visually-hidden" type="radio" name="product-group" value="motel">
                   <span class="control-mark control-mark-radio">
                     <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать мотель." width="10"
                       height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,7 +152,7 @@
 
               <li class="catalog-filter-item">
                 <label class="catalog-filter-control">
-                  <input class="catalog-filter-control-radio visually-hidden" type="radio" name="product-group">
+                  <input class="catalog-filter-control-radio visually-hidden" type="radio" name="product-group" value="apartments">
                   <span class="control-mark control-mark-radio">
                     <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать апартаменты." width="10"
                       height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,12 +172,14 @@
             <div class="range-wrapper-inputs">
               <div class="range">
                 <div class="catalog-filter-range">
-                  <label class="catalog-filter-label catalog-filter-label-from">
-                    <input class="catalog-filter-range-input" type="number" name="price-range-min" value="0">
-                  </label>
-                  <label class="catalog-filter-label catalog-filter-label-to">
-                    <input class="catalog-filter-range-input" type="number" name="price-range-max" value="9000">
-                  </label>
+                  <div class="catalog-filter-range-item">
+                    <label class="catalog-filter-label catalog-filter-label-from" for="range-from">от</label>
+                    <input class="catalog-filter-range-input" id="range-from" type="number" name="price-range-min" value="0">
+                  </div>
+                  <div class="catalog-filter-range-item">
+                    <label class="catalog-filter-label catalog-filter-label-to" for="range-to">до</label>
+                    <input class="catalog-filter-range-input" id="range-to" type="number" name="price-range-max" value="9000">
+                  </div>
                 </div>
               </div>
             </div>
@@ -358,7 +360,7 @@
                 <a class="pagination-button" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <span class="pagination-button">...</span>
+                <span class="pagination-button pagination-button-ellipsis">...</span>
               </li>
               <li class="pagination-item">
                 <a class="pagination-button" href="#">10</a>
